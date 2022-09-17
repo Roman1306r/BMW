@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>B M W</title>
+</head>
+<body>
+    <div class="wrapper">
+         <header class="header" id="header">
+          <div class="header__container">
+              <div class="header__logo"><img src="image/logo.svg" alt="logo"><span>BMW</span></div>
+              <div class="header__menu menu">
+                  <div class="menu__icon"><span></span></div>
+                  <nav class="menu__body">
+                      <ul class="menu__list">
+                          <li><a data-goto=".page__section_1" href="#" class="header__link">ADVANTAGES</a></li>
+                          <li><a data-goto=".page__section_2" href="#" class="header__link">LINEUP</a></li>
+                          <li><a data-goto=".page__section_3" href="#" class="header__link">Cars</a></li>
+                          <li><a data-goto=".page__section_4" href="#" class="header__link">Contact</a></li>
+                          <li><a href="##" class="header__link adress"><img src="image/icons/adress.png" alt="adress"></a></li>
+                          <li><a href="##" class="header__link search"><img src="image/icons/search.svg" alt="search"></a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+         </header>
+         <main class="content">
+              <section class="we">
+                  <div class="we__body">
+                      <h1 class="we__title s">Driving pleasure</h1>
+                      <div class="we__btn">
+                          <a href="#">watch</a>
+                      </div>
+                  </div>
+                  <!-- autoplay -->
+                  <video muted autoplay  loop  preload="auto" class="full-screen__video">
+                    <source src="video/bmw1 (online-video-cutter.com).mp4" type="video/mp4">
+                  </video>
+              </section>
+              <section class="advantages page__section_1">
+                <div class="advantages__container">
+                <h2 class="advantages__title"><span id="adv" class="anim__items s">ADVANTAGES </span> OF <span class="anim__items s">CARS BMW</span></h2>
+                <div class="advantages__body"> 
+                  <div class="advantages__item">
+                    <div class="advantages__item-item">
+                      <img src="image/advantage/speed.png" alt="speed">
+                      <div class="advantages__text s">decent acceleration dynamics</div>
+                    </div>
+                    <div class="advantages__item-item">
+                        <img src="image/advantage/engine.png" alt="engine">
+                         <div class="advantages__text s">reliable engine</div>
+                    </div>                
+                  </div>
+                  <div class="advantages__item">
+                    <div class="advantages__item-item">
+                        <img src="image/advantage/transmission.png" alt="transmission">
+                        <div class="advantages__text s">excellent transmission</div>
+                    </div>
+                    <div class="advantages__item-item">
+                        <img src="image/advantage/rul.png" alt="rul">
+                        <div class="advantages__text s">cabin comfort</div>
+                    </div>
+                  </div>
+                  <div class="advantages__item">
+                    <div class="advantages__item-item">
+                        <img src="image/advantage/4wd.png" alt="4wd">
+                        <div class="advantages__text">four-wheel drive</div>
+                    </div>
+                    <div class="advantages__item-item">
+                        <img src="image/advantage/trunk.png" alt="trunk">
+                        <div class="advantages__text">large luggage capacity</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </section>
+              <section class="model page__section_2">
+                <div class="model__container">
+                     <h2 class="model__title anim__items s">BMW lineup</h2>
+                     <div class="model__text">The Bavarian company BMW produces passenger cars and sports cars for  various market segments. The <a href="">BMW X5</a>  and <a href="">X6</a>  SUVs, executive <a href="">sedans of the seventh series</a>  are  gaining more and more popularity in Russia. The BMW model range is also represented by business  class cars (<a href="">BMW 5 series</a>), sports coupes (<a href="">BMW M8</a>), convertibles and roadsters (<a href="">BMW 8 series</a> and <a href="">Z4</a>). The list is supplemented by small and medium class cars in the body of a sedan or station   wagon (<a href="">BMW 3 series</a>) and compact hatchbacks (<a href="">BMW 1 series hatchback</a>).</div> 
+                     <img src="image/model/whell.png" alt="whell" class="whell">
+                     <img src="image/model/logo.png" alt="logo" class="model__logo anim__items">
+                </div>         
+              </section>      
+              <section class="row page__section_3">
+                <div class="row__top">
+                  <div class="row__title anim__items s">Cars today</div>
+                  <div class="row__text anim__items">Today, the company produces very high-quality cars that are popular not only at home, but throughout the world. Today, the car of this concern has become a symbol of German quality and reliability.</div>
+                  <div class="row__filter-info">choose a category...</div>
+                </div>
+                <div class="row__filters" id="myBtnContainer">
+                  <button  class="row__filter btn act" onclick="filterSelection('all')">All models</и>
+                  <button  class="row__filter btn" onclick="filterSelection('small')">SMALL MIDDLE</button>
+                  <button  class="row__filter btn" onclick="filterSelection('middle')">MIDDLE</button>
+                  <button  class="row__filter btn" onclick="filterSelection('business')">BUSINESS</button>
+                  <button  class="row__filter btn" onclick="filterSelection('represent')">REPRESENTATIVE</button>
+                  <button  class="row__filter btn" onclick="filterSelection('offroad')">OFF-ROAD</button>
+                  <button  class="row__filter btn" onclick="filterSelection('coupe')">COUPE</button>
+                  <button  class="row__filter btn" onclick="filterSelection('roadster')">CONVERTIBLE AND ROADSTER</button>
+                </div>
+                <div class="slider">
+                  <div class="slider__item small anim__items anim-no-hide">
+                    <img src="image/row/f40.webp" alt="bmw f 40">
+                    <div class="slider__item__title s">BMW 1 series hatchback 5-door F40</div>
+                    <div class="slider__item__text">from $49 611</div>
+                  </div>
+                  <div class="slider__item small anim__items anim-no-hide">
+                    <div class="img___div"><img src="image/row/f44.webp" alt="bmw f 44"></div>
+                    <div class="slider__item__title s">BMW 2 Series Gran Coupe F44</div>
+                    <div class="slider__item__text">from $54 500</div>
+                  </div>
+                  <div class="slider__item  middle anim__items anim-no-hide">
+                    <div class="img___div"><img src="image/row/g20.webp" alt="bmw g20/g21"></div> 
+                    <div class="slider__item__title s">BMW 3 series sedan G20/G21 restyling</div>
+                    <div class="slider__item__text">from $64 500</div>
+                  </div>
+                  <div class="slider__item middle anim__items anim-no-hide">
+                    <img src="image/row/g80.webp" alt="bmw g80">
+                    <div class="slider__item__title s">BMW M3 Sedan G80</div>
+                    <div class="slider__item__text">from $147 000</div>
+                  </div>
+                  <div class="slider__item middle anim__items anim-no-hide">
+                    <img src="image/row/g22.webp" alt="bmw g22/g26">
+                    <div class="slider__item__title s">BMW 4 Series Gran Coupe G22/G23/G26</div>
+                    <div class="slider__item__text">from $74 500</div>
+                  </div>
+                  <div class="slider__item middle anim__items anim-no-hide">
+                    <img src="image/row/i4 g26.webp" alt="bmw i4 g26">
+                    <div class="slider__item__title s">BMW i4 G26</div>
+                    <div class="slider__item__text">from $83 500</div>
+                  </div>
+                  <div class="slider__item business anim__items anim-no-hide">
+                    <img src="image/row/g30.webp" alt="bmw g30">
+                    <div class="slider__item__title s">BMW 5 series sedan G30 restyling</div>
+                    <div class="slider__item__text">from $84 500</div>
+                  </div>
+                  <div class="slider__item business anim__items anim-no-hide">
+                    <img src="image/row/m5 f90.webp" alt="bmw m5 f90 rest">
+                    <div class="slider__item__title s">BMW M5 sedan F90 restyling</div>
+                    <div class="slider__item__text">from $190 000</div>
+                  </div>
+                  <div class="slider__item business anim__items anim-no-hide">
+                    <img src="image/row/g32.webp" alt="bmw g32">
+                    <div class="slider__item__title s"> BMW 6 Series Gran Turismo G32 facelift</div>
+                    <div class="slider__item__text">from $99 000</div>
+                  </div>
+                  <div class="slider__item represent anim__items anim-no-hide">
+                    <img src="image/row/g70.webp" alt="bmw g70">
+                    <div class="slider__item__title s">BMW 7 Series G70</div>
+                    <div class="slider__item__text">from $58 000</div>
+                  </div>
+                  <div class="slider__item represent anim__items anim-no-hide">
+                    <img src="image/row/i7 g70.webp" alt="bmw i7 g70">
+                    <div class="slider__item__title s">BMW i7 G70</div>
+                    <div class="slider__item__text">from $107 000</div>
+                  </div>
+                   <div class="slider__item represent anim__items anim-no-hide">
+                    <img src="image/row/g11.webp" alt="bmw 7 g11">
+                    <div class="slider__item__title s">BMW 7 series G11/G12 restyling</div>
+                    <div class="slider__item__text">from $142 000</div>
+                  </div>
+                  <div class="slider__item represent anim__items anim-no-hide">
+                    <img src="image/row/g14.webp" alt="bmw 8 g14">
+                    <div class="slider__item__title s">BMW 8 Series Gran Coupé G14/G15/G16</div>
+                    <div class="slider__item__text">from $157 000</div>
+                  </div>
+                  <div class="slider__item represent anim__items anim-no-hide">
+                    <img src="image/row/f91.webp" alt="bmw m8 g91">
+                    <div class="slider__item__title s">BMW M8 Gran Coupe F91/F92/F83</div>
+                    <div class="slider__item__text">from $231 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x1.webp" alt="bmw x1">
+                    <div class="slider__item__title s">BMW X1 F48 restyling</div>
+                    <div class="slider__item__text">from $54 500</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x2.webp" alt="bmw x2">
+                    <div class="slider__item__title s">BMW X2 F39</div>
+                    <div class="slider__item__text">from $58 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x3.webp" alt="bmw x3">
+                    <div class="slider__item__title s">BMW X3 G01 restyling</div>
+                    <div class="slider__item__text">from $87 500</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x4.webp" alt="bmw x4">
+                    <div class="slider__item__title s">BMW X4 G02 restyling</div>
+                    <div class="slider__item__text">from $119 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x5.webp" alt="bmw x5">
+                    <div class="slider__item__title s">BMW X5 G05</div>
+                    <div class="slider__item__text">from $119 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x5m.webp" alt="bmw x5 M">
+                    <div class="slider__item__title s">BMW X5 M F95</div>
+                    <div class="slider__item__text">from $228 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x6.webp" alt="bmw x6">
+                    <div class="slider__item__title s">BMW X6 G06</div>
+                    <div class="slider__item__text">from $139 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x6m.webp" alt="bmw x6 M">
+                    <div class="slider__item__title s">BMW X6 M F96</div>
+                    <div class="slider__item__text">from $231 000</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/x7.webp" alt="bmw x7">
+                    <div class="slider__item__title s">BMW X7 G07</div>
+                    <div class="slider__item__text">from $154 600</div>
+                  </div>
+                  <div class="slider__item offroad anim__items anim-no-hide">
+                    <img src="image/row/ix.webp" alt="bmw iX">
+                    <div class="slider__item__title s">BMW iX I generation</div>
+                    <div class="slider__item__text">from $157 000</div>
+                  </div>
+                  <div class="slider__item coupe anim__items anim-no-hide">
+                    <img src="image/row/g42.webp" alt="bmw g42">
+                    <div class="slider__item__title s">BMW 2 Series Coupe G42</div>
+                    <div class="slider__item__text">from $64 500</div>
+                  </div>
+                  <div class="slider__item coupe anim__items anim-no-hide">
+                    <img src="image/row/4 g22.webp" alt="bmw 4 g22">
+                    <div class="slider__item__title s">BMW 4 Series Coupe G22/G23/G26</div>
+                    <div class="slider__item__text">from $74 500</div>
+                  </div>
+                  <div class="slider__item coupe anim__items anim-no-hide">
+                    <img src="image/row/g82.webp" alt="bmw g82">
+                    <div class="slider__item__title s">BMW M4 Coupe G82</div>
+                    <div class="slider__item__text">from $149 000</div>
+                  </div>
+                  <div class="slider__item coupe anim__items anim-no-hide">
+                    <img src="image/row/CSL.webp" alt="bmw CSL">
+                    <div class="slider__item__title s">BMW M4 CSL G82</div>
+                    <div class="slider__item__text">from $149 000</div>
+                  </div>
+                  <div class="slider__item coupe anim__items anim-no-hide">
+                    <img src="image/row/8 g14.webp" alt="bmw 8 g14">
+                    <div class="slider__item__title s">BMW 8 Series Coupe G14/G15/G16</div>
+                    <div class="slider__item__text">from $162 000</div>
+                  </div>
+                  <div class="slider__item coupe anim__items anim-no-hide">
+                    <img src="image/row/m8f91.webp" alt="bmw M8 f91">
+                    <div class="slider__item__title s">BMW M8 Coupe F91/F92/F83</div>
+                    <div class="slider__item__text">from $240 000</div>
+                  </div>
+                  <div class="slider__item roadster anim__items anim-no-hide">
+                    <img src="image/row/r g22.webp" alt="bmw roadster g22">
+                    <div class="slider__item__title s">BMW 4 Series Convertible G22/G23/G26</div>
+                    <div class="slider__item__text">from $82 000</div>
+                  </div>
+                  <div class="slider__item roadster anim__items anim-no-hide">
+                    <img src="image/row/z4.webp" alt="bmw roadster z4">
+                    <div class="slider__item__title s">BMW Z4 Roadster G29</div>
+                    <div class="slider__item__text">from $84 000</div>
+                  </div>
+                  <div class="slider__item roadster anim__items anim-no-hide">
+                    <img src="image/row/r g14.webp" alt="bmw roadster g14">
+                    <div class="slider__item__title s">BMW 8 Series Convertible G14/G15/G16</div>
+                    <div class="slider__item__text">from $182 000</div>
+                  </div>
+                  <div class="slider__item roadster anim__items anim-no-hide">
+                    <img src="image/row/m8 r f91.webp" alt="bmw roadster 8 f91">
+                    <div class="slider__item__title s">BMW M8 Convertible F91/F92/F83</div>
+                    <div class="slider__item__text">from $257 000</div>
+                  </div>
+                </div>
+              </section>
+              <section class="contactus page__section_4">
+                <div class="contactus__container">
+                <div class="contactus__body">
+                  <div class="contactus__top">
+                    <div class="contactus__title anim__items s">Contact Us</div>
+                    <div class="contactus__text">
+                      <div class="contactus__text__info">You can use a test drive, sign up for a service, order a call, see our address. To do this, please fill out the form</div>
+                      <div class="contactus__text__items">
+                        <a href="#form" class="item anim__items"><img src="image/advantage/rul.png" alt="rul"></a>
+                        <a href="#form" class="item anim__items"><img src="image/icons/servise.png" alt="service"></a>
+                        <a href="#form" class="item anim__items"><img src="image/icons/telefon.png" alt="telefon"></a>
+                        <a href="##" class="item anim__items adress"><img src="image/icons/adress.png" alt="adress"></a>
+                      </div>
+                    </div>
+                  </div> 
+                  <form class="contactus__bottom" id="form">
+                    <div class="mameandemail">
+                      <div class="name"><input name="name" type="text" class="input" placeholder="Your name" required></div>
+                      <div class="email"><input name="phone" type="email" class="input" placeholder="Your phone" required></div>
+                    </div>
+                    <div class="service">
+                            <label for="service">Choose a service:</label>
+                            <select id="service">
+                              <option value="test-drive">test-drive</option>
+                              <option value="work in service">work in service</option>
+                              <option value="order a call">order a call</option>
+                            </select>
+                    </div>        
+                    <div class="text"><textarea name="message" id="textarea" cols="30" rows="5" placeholder="Your message"></textarea></div>
+                    <button class="form__btn" type="submit">Send</button>
+                  </form>
+                </div>
+              </div>
+              </section>
+              <section class="dukich">
+                <div class="see anim__items">watch</div>
+                <div class="dukich__container">
+                <div class="dukich__photo"><img src="image/dukich/domagoj-dukec-1608289544.webp" alt="dukich"></div>
+                <div class="dukich__body">
+                    <h2 class="dukich__title"><span class="anim__items">B</span><span class="anim__items">M</span><span class="anim__items">W</span></h2>
+                    <blockquote class="anim__items">
+                    <span class="dukich__span">„</span> Our goal is not to please everyone in the world.
+                     It is impossible to create a design that will please everyone. 
+                     However, first of all, you must please your customers. <span class="dukich__span">“</span>
+                    </blockquote>
+                    <figcaption class="dukich__author s">Domagoj Dukech, Chief Designer at BMW</figcaption>
+                </div>
+              </div>
+              </section>
+              <section class="location map">
+                       <img src="image/icons/close.png" alt="close" class="location__close" >
+                      <div class="location_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13324.499409009348!2d27.582796283243923!3d53.96800111710653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc601016c3ed9%3A0x24774571e3293f88!2z0JDQstGC0L7RhtC10L3RgtGAIEJNVyDQuCBNSU5J!5e1!3m2!1sru!2sby!4v1663270316175!5m2!1sru!2sby"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                      <div class="location__info">
+                        <p class="location__email"><a title="Write" href="mailto:roman.rudyachenko@yandex.ru">roman.rudyachenko@yandex.ru</a></p>
+                        <p class="location__telefon"><a href="tel:+375292999872" title="Watch phone">+375292999872</a></p>
+                      </div>   
+              </section>
+              <section class="searches">
+                <div class="search__body">
+                  <div class="search__input">
+                          <input type="text" placeholder="SEARCH" id="search1">
+                          <button>Close</button>
+                  </div>
+                  <div class="search__info">Enter at least 2 characters to start searching</div>
+                  <a href="#" class="search__result"></a>
+                </div>
+              </section>
+         </main>
+         <footer class="footer">
+           <div class="footer__container">
+             <p class="footer__info">©2022  <img src="image/logo.svg" alt="logo">
+              Made by <a href="https://t.me/DadkaDroch"> Roman</a></p>
+           </div>
+         </footer>
+    </div>
+
+
+    <!-- Кнопка вверх -->
+
+    <div class="up">
+        <a href="#header" class="up__arrow"><img src="image/icons/up.png" alt="arrow"></a>
+    </div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script/slick.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
